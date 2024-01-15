@@ -39,29 +39,30 @@ import math
 input_one = int(input("input Value 1 "))
 input_two = int(input("input Value 2 "))
 input_three = input("input sign ")
-arr = ["+","-","*", "**","/", "//"]
+arr = ["+", "-", "*", "**", "/", "//"]
+
 for sign in arr:
     if sign == "+" :
-        ans = input_one + input_two
+        sum = input_one + input_two
+        print (f"Answer is {sum} ")
         
-    
     elif sign == "*":
-        ans = input_one * input_two
-        
+        product = input_one * input_two
+        print ( f"Answer is {product}")
 
     elif  sign == "-" :
-        ans = input_one - input_two
-       
-    
-    elif sign == "/" :
-        ans = input_one / input_two
+        subtraction = input_one - input_two
+        print ( f"Answer is {subtraction}")
         
-    elif sign == "**" :
-        ans =  input_one ** input_two
-       
-    
-    elif sign == "//" :
-        ans = math.sqrt(input_one)
+    elif sign == "/" :
+        division = input_one / input_two
+        print ( f"Answer is {division}")
 
-        print (f"Answer is {ans}")
+    elif sign == "**" :
+        power = input_one ** input_two
+        print ( f"Answer is {power}")
+        
+    elif sign == "//" :
+        sqrt = math.sqrt(input_one)
+        print ( f"Answer is {sqrt}")
 
