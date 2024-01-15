@@ -6,30 +6,62 @@
 
 # #### Exercise
 #Python CalcSimple Pyulator Program: Write a simple program that does basic math operations including addition, subtraction, deletion, division, power, squareroot,etc,. 
+# import math 
+# input_one = int(input("Input Value 1 "))
+# input_two = int(input("Input Value 2 "))
+# sign = input("Input sign ")
+# if sign == "+" :
+#     sum = input_one + input_two
+#     print (f"Answer is {sum} ")
+    
+# elif sign == "*":
+#     product = input_one * input_two
+#     print ( f"Answer is {product}")
+
+# elif  sign == "-" :
+#     subtraction = input_one - input_two
+#     print ( f"Answer is {subtraction}")
+    
+# elif sign == "/" :
+#     division = input_one / input_two
+#     print ( f"Answer is {division}")
+
+# elif sign == "**" :
+#     power = input_one ** input_two
+#     print ( f"Answer is {power}")
+    
+# elif sign == "//" :
+    # sqrt = math.sqrt(input_one)
+    # print ( f"Answer is {sqrt}")
+
+
 import math 
-input_one = int(input("Input Value 1 "))
-input_two = int(input("Input Value 2 "))
-sign = input("Input sign ")
-if sign == "+" :
-    sum = input_one + input_two
-    print (f"Answer is {sum} ")
+input_one = int(input("input Value 1 "))
+input_two = int(input("input Value 2 "))
+input_three = input("input sign ")
+arr = ["+","-","*", "**","/", "//"]
+for sign in arr:
+    if sign == "+" :
+        ans = input_one + input_two
+        
     
-elif sign == "*":
-    product = input_one * input_two
-    print ( f"Answer is {product}")
+    elif sign == "*":
+        ans = input_one * input_two
+        
 
-elif  sign == "-" :
-    subtraction = input_one - input_two
-    print ( f"Answer is {subtraction}")
+    elif  sign == "-" :
+        ans = input_one - input_two
+       
     
-elif sign == "/" :
-    division = input_one / input_two
-    print ( f"Answer is {division}")
+    elif sign == "/" :
+        ans = input_one / input_two
+        
+    elif sign == "**" :
+        ans =  input_one ** input_two
+       
+    
+    elif sign == "//" :
+        ans = math.sqrt(input_one)
 
-elif sign == "**" :
-    power = input_one ** input_two
-    print ( f"Answer is {power}")
-    
-elif sign == "//" :
-    sqrt = math.sqrt(input_one)
-    print ( f"Answer is {sqrt}")
+        print (f"Answer is {ans}")
+
